@@ -19,6 +19,7 @@
 
 .container.right{
     justify-content: flex-end;
+    margin-right: calc(100vw * 0.021);
 }
 
 .btn{

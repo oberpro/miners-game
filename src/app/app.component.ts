@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
+import { Http } from '@angular/http';
 import { MgDataserviceService } from 'app/mg-dataservice.service';
 @Component({
   selector: 'app-root',
