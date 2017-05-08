@@ -1,0 +1,7 @@
+<div class="top">
+  <div class="key">{{key}}</div>
+  <div class="value">{{pad(value.toFixed(0),5)}}<span class="size">{{size}}</span></div>
+</div>
+<div class="bottom" *ngIf="sub != null && sub.length > 0">
+  {{sub}}
+</div>
