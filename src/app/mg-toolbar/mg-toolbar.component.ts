@@ -9,7 +9,7 @@ import { Loader } from 'app/loader';
 
 export class MgToolbarComponent implements OnInit {
   @Input("service") service: MgIfdataservice;
-  private units;
+  private units = [];
   constructor(private loader: Loader) {
     loader.getUnits().then((data) => {
       this.units = data;
@@ -19,6 +19,18 @@ export class MgToolbarComponent implements OnInit {
 
   ngOnInit() {
   }
+
+
+  replacevalue(value: string, unit: string): string {
+    if (value.includes("%d")) {
+      if (unit == undefined) {
+        unit = "0";
+      }
+      return value.replace("%d", unit);
+    }
+    return value;
+  }
+
 
 
 }

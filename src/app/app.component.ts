@@ -9,7 +9,7 @@ import { MgDataserviceService } from 'app/mg-dataservice.service';
 export class AppComponent {
   private service: MgDataserviceService;
   constructor() {
-    this.service = new MgDataserviceService(0, 0, 0, 0);
+    this.service = new MgDataserviceService(0, 0, 0, 0, 1);
 
   }
 }

@@ -1,7 +1,36 @@
 {
     "units": [
         {
-            "name": "Kupfer"
+            "name": "Kupfer",
+            "style": "copper",
+            "size": "T",
+            "subtitle": "%d T/s",
+            "value": "copper",
+            "subvalue": "copperprod"
+        },
+        {
+            "name": "Silber",
+            "style": "silver",
+            "size": "T",
+            "subtitle": "%d T/s",
+            "value": "silver",
+            "subvalue": ""
+        },
+        {
+            "name": "Gold",
+            "style": "gold",
+            "size": "T",
+            "subtitle": "%d T/s",
+            "value": "gold",
+            "subvalue": ""
+        },
+        {
+            "name": "Titan",
+            "style": "titan",
+            "size": "T",
+            "subtitle": "%d T/s",
+            "value": "titan",
+            "subvalue": ""
         }
     ]
 }

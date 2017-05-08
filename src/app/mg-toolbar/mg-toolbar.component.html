@@ -3,5 +3,6 @@
   <div class="btn">Verkaufen</div>
 </div>
 <div class="container right">
-  <mg-valueoutput class="silver" [key]="'Silber'" [size]="'T'" [value]="service.silver" [subtitle]="'0 T/s'"></mg-valueoutput>
+  <mg-valueoutput *ngFor="let unit of units.units" class="{{unit.style}}" [key]="unit.name" [size]="unit.size" [value]="service[unit.value]"
+    [subtitle]="replacevalue(unit.subtitle,service[unit.subvalue])"></mg-valueoutput>
 </div>

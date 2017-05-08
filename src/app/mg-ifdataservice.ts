@@ -3,4 +3,6 @@ export interface MgIfdataservice {
     silver: number;
     gold: number;
     titan: number;
+
+    copperprod: number;
 }
